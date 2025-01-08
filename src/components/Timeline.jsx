@@ -25,7 +25,7 @@ const Timeline = () => {
   const data = [
     {
       title: "2021",
-      content: "Completed Higher Studies in Computer Science",
+      content: "Completed Higher Secondary education in Computer Science",
     },
     {
       title: "2024",
@@ -33,11 +33,11 @@ const Timeline = () => {
     },
     {
       title: "NOVEMBER 2024",
-      content: "Completed MEARN Stack From Luminar Tchnolab Kochi.",
+      content: "Completed MEARN Stack From Luminar Technolab Kochi.",
     },
     {
       title: "SEPTEMBER 2024",
-      content: "wEB DEVELOPER INTERN AT ZYMO - SELF DRIVE CAR RENTALS",
+      content: "WEB DEVELOPER INTERN AT ZYMO - SELF DRIVE CAR RENTALS",
     },
     {
       title: "NOVEMBER 2024",
