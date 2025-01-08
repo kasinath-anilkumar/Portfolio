@@ -6,11 +6,6 @@ export const Projects = ({ className }) => {
 
   const projectItems = [
     {
-      title: "Portfolio Website",
-      description: "A personal portfolio showcasing my projects and skills.",
-      link: <portfolio/>,
-    },
-    {
       title: "Ai Chatbot -Samoosa",
       description: "A Personal Assistant",
       link: "https://samoosa-chatbot.netlify.app/",
@@ -23,7 +18,7 @@ export const Projects = ({ className }) => {
     {
       title: "Apple Website Clone",
       description: "Apple official website clone",
-      link: "https://react-weather-app-kasinath.netlify.app/",
+      link: "https://kasinath-anilkumar.github.io/apple-clone-kasinath-anilkuamar/",
     },
     {
       title: "Versace Clone",
@@ -32,8 +27,13 @@ export const Projects = ({ className }) => {
     },
     {
       title: "Gucci Clone",
-      description: "A real-time chat application with user authentication.",
+      description: "Gucci Brand Clone",
       link: "https://kasinath-anilkumar.github.io/Gucci-Clone/",
+    },
+    {
+      title: "Rog Clone",
+      description: "Republic of Gamers Official Website Clone",
+      link: "https://kasinath-anilkumar.github.io/Rog-Clone/",
     },
   ];
 
