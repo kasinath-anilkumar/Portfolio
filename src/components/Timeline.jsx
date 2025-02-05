@@ -1,6 +1,6 @@
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion, px } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import Vortex from "./Vortex ";
+import Vortex from "../components/Vortex ";
 
 const Timeline = () => {
   const ref = useRef(null);
@@ -23,38 +23,14 @@ const Timeline = () => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   const data = [
-    {
-      title: "2021",
-      content: "Completed Higher Secondary education in Computer Science",
-    },
-    {
-      title: "2024",
-      content: "Graduated in Bachelor's Computer Application From Kerala University",
-    },
-    {
-      title: "NOVEMBER 2024",
-      content: "Completed MEARN Stack From Luminar Technolab Kochi.",
-    },
-    {
-      title: "SEPTEMBER 2024",
-      content: "WEB DEVELOPER INTERN AT ZYMO - SELF DRIVE CAR RENTALS",
-    },
-    {
-      title: "NOVEMBER 2024",
-      content: "Completed 2 MONTH Internship at Zymo",
-    },
-    {
-      title: "NOVEMBER 2024",
-      content: "Completed MEARN Stack From Luminar Tchnolab Kochi.",
-    },
-    {
-      title: "DECEMBER 2024",
-      content: "WORKING AS A FREELANCE REACT DEVELOPER",
-    },
-    {
-      title: "2025",
-      content: "I am exploring new opportunities for a Frontend Developer role.", // Example for testing conditional styling
-    },
+    { title: "2021", content: "Completed Higher Secondary education in Computer Science" },
+    { title: "2024", content: "Graduated in Bachelor's Computer Application From Kerala University" },
+    { title: "NOVEMBER 2024", content: "Completed MEARN Stack From Luminar Technolab Kochi." },
+    { title: "SEPTEMBER 2024", content: "WEB DEVELOPER INTERN AT ZYMO - SELF DRIVE CAR RENTALS" },
+    { title: "NOVEMBER 2024", content: "Completed 2 MONTH Internship at Zymo" },
+    { title: "NOVEMBER 2024", content: "Completed MEARN Stack From Luminar Technolab Kochi." },
+    { title: "DECEMBER 2024", content: "WORKING AS A FREELANCE REACT DEVELOPER" },
+    { title: "2025", content: "Exploring new opportunities for a Frontend Developer role." },
   ];
 
   return (
@@ -72,7 +48,7 @@ const Timeline = () => {
               Changelog from my journey
             </h2>
             <p className="text-neutral-300 text-sm md:text-base max-w-sm">
-            I've been honing my web development skills with React for the past few years. Here's a timeline of my journey.
+              I've been honing my web development skills with React for the past few years. Here's a timeline of my journey.
             </p>
           </div>
           <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
@@ -86,16 +62,16 @@ const Timeline = () => {
                     {item.title}
                   </h3>
                 </div>
+                <div className="relative pl-14 pr-4 md:pl-6 w-full flex items-start flex-col md:flex-row">
+  <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500 text-[clamp(1.2rem,4vw,2rem)] md:ml-0 ml-6">
+    {item.title}
+  </h3>
+  <p className="text-gray-400 uppercase text-[clamp(0.85rem,3vw,1.25rem)] sm:tracking-tighter lg:tracking-widest sm:ml-0 md:ml-0 ml-6">
+    {item.content}
+  </p>
+</div>
 
-                <div className="relative pl-20 pr-4 md:pl-4 w-full flex items-center">
-                  <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-400  uppercase sm:text-xs lg:text-lg sm:tracking-tighter lg:tracking-widest sm:ms-20">
-                    {item.content}
-                  </p>
 
-                </div>
               </div>
             ))}
             <div

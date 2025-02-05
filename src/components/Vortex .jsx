@@ -227,7 +227,10 @@ const Vortex = (props) => {
         ref={containerRef}
         className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center">
         <canvas ref={canvasRef}></canvas>
-        <h1 className="absolute sm:text-xs lg:text-5xl z-10 font-semibold uppercase text-purple-200">A Vortex of Experiences</h1>
+        <h1 className="absolute inset-0 flex items-center justify-center text-center text-xs sm:text-sm md:text-lg lg:text-5xl z-10 font-semibold uppercase text-purple-200">
+          A Vortex of Experiences
+        </h1>
+
       </motion.div>
       <div className={`relative z-10 ${props.className}`}>
         {props.children}

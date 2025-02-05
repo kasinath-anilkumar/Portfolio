@@ -182,7 +182,7 @@ const Portfolio = () => {
               <Nav.Link href="#home" className="text-white mx-3">
                 Home
               </Nav.Link>
-              <Nav.Link href="#projects" className="text-white mx-3">
+              <Nav.Link href="#projects-main" className="text-white mx-3">
                 Projects
               </Nav.Link>
               <Nav.Link href="#experience" className="text-white mx-3">
