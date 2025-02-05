@@ -86,7 +86,7 @@ const SkillList = ({
 const FrontendContent = () => (
   <div className="frontend-content p-4 flex flex-col items-center justify-center">
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center">
-      
+
       <SkillCard logo="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-256.png" />
       <SkillCard logo="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-256.png" />
       <SkillCard logo="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" />
@@ -110,11 +110,11 @@ const LibraryContent = () => (
   <div className="library-content p-4 flex flex-col items-center justify-center">
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center">
       <SkillCard logo="https://i1.wp.com/www.ux-republic.com/wp-content/uploads/2016/11/logo-redux.png?fit=500%2C500&ssl=1" />
-      <SkillCard  logo="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/framer-color-icon.png" />
-      <SkillCard  logo="https://peng-xiao-shuai.github.io/vite-vue-admin/logo.png" />
-      <SkillCard  logo="https://iconape.com/wp-content/png_logo_vector/netlify-logo.png" />
-      <SkillCard  logo="https://jquery-plugins.net/image/plugin/mui-react-component-library.png" />
-      <SkillCard  logo="https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-8sw7kisf.png" />
+      <SkillCard logo="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/framer-color-icon.png" />
+      <SkillCard logo="https://peng-xiao-shuai.github.io/vite-vue-admin/logo.png" />
+      <SkillCard logo="https://iconape.com/wp-content/png_logo_vector/netlify-logo.png" />
+      <SkillCard logo="https://jquery-plugins.net/image/plugin/mui-react-component-library.png" />
+      <SkillCard logo="https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-8sw7kisf.png" />
     </div>
   </div>
 );
@@ -123,7 +123,7 @@ const ToolsContent = () => (
   <div className="tools-content p-4 flex flex-col items-center justify-center">
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center">
       <SkillCard logo="https://code.visualstudio.com/assets/images/code-stable.png" />
-      <SkillCard logo="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-256.png" />    
+      <SkillCard logo="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-256.png" />
       <SkillCard logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38jXgeU5CvHhig8Er9MiDguQcPPh40_uKX6VPGGyD2ytDqqcEfqzTE1lepasmfHUfPEE&usqp=CAU" />
       <SkillCard logo="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-256.png" />
       <SkillCard logo="https://storage.googleapis.com/ai-prod-wagtail/images/Image_ratios_wFa85ot.original.format-webp.webp" />
@@ -188,18 +188,18 @@ const FadeInDiv = ({ className, tabs, hovering }) => {
         </motion.div>
       ))}
 
-<div onClick={<Portfolio/>} className="flex absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
-  <a
-    href="#"
-    download="Kasinath_Resume.pdf"
-    className="p-[3px] relative no-underline  "
-  >
-    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg"></div>
-    <div  className="cursor-pointer px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent hover:shadow-lg">
-     Go To Top
-    </div>
-  </a>
-</div>
+      <div onClick={<Portfolio />} className="flex absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer z-50">
+        <a
+          href="#home"
+          // download="Kasinath_Resume.pdf"
+          className="p-[3px] relative no-underline  "
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg"></div>
+          <div className="cursor-pointer px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent hover:shadow-lg">
+            Go To Top
+          </div>
+        </a>
+      </div>
 
     </div>
   );
