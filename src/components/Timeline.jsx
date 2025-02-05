@@ -29,6 +29,7 @@ const Timeline = () => {
     { title: "SEPTEMBER 2024", content: "WEB DEVELOPER INTERN AT ZYMO - SELF DRIVE CAR RENTALS" },
     { title: "NOVEMBER 2024", content: "Completed 2 MONTH Internship at Zymo" },
     { title: "NOVEMBER 2024", content: "Completed MEARN Stack From Luminar Technolab Kochi." },
+    { title: "NOVEMBER 2024", content: "WORKED AS A FREELANCE REACT DEVELOPER AT WHITE MATRIX SOFTWARE SOLUTIONS" },
     { title: "DECEMBER 2024", content: "WORKING AS A FREELANCE REACT DEVELOPER" },
     { title: "2025", content: "Exploring new opportunities for a Frontend Developer role." },
   ];
@@ -63,13 +64,13 @@ const Timeline = () => {
                   </h3>
                 </div>
                 <div className="relative pl-14 pr-4 md:pl-6 w-full flex items-start flex-col md:flex-row">
-  <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500 text-[clamp(1.2rem,4vw,2rem)] md:ml-0 ml-6">
-    {item.title}
-  </h3>
-  <p className="text-gray-400 uppercase text-[clamp(0.85rem,3vw,1.25rem)] sm:tracking-tighter lg:tracking-widest sm:ml-0 md:ml-0 ml-6">
-    {item.content}
-  </p>
-</div>
+                  <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500 text-[clamp(1.2rem,4vw,2rem)] md:ml-0 ml-6">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 uppercase text-[clamp(0.85rem,3vw,1.25rem)] sm:tracking-tighter lg:tracking-widest sm:ml-0 md:ml-0 ml-6">
+                    {item.content}
+                  </p>
+                </div>
 
 
               </div>
