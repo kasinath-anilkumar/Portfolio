@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Portfolio from "./Portfolio";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const SkillList = ({
   tabs: propTabs = [
@@ -194,9 +195,9 @@ const FadeInDiv = ({ className, tabs, hovering }) => {
           // download="Kasinath_Resume.pdf"
           className="p-[3px] relative no-underline  "
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg"></div> */}
           <div className="cursor-pointer px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent hover:shadow-lg">
-            Go To Top
+          <FaArrowCircleUp className="text-4xl text-purple-600" />
           </div>
         </a>
       </div>
