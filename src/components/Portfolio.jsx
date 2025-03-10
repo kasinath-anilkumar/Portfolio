@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { Container, Nav, Navbar, Modal } from "react-bootstrap";
 import Spline from "@splinetool/react-spline";
-import { Button } from "@mui/material";
-import { TextGenerateEffect } from "./TextGenerateEffect"; // Ensure this path is correct
-import Parallax from "../components/Parallax";
-import ParticleEffect from "./Particles/ParticleEffect ";
-import Timeline from "./Timeline";
-import ParallaxScrollDemo from "./ParallaxScrollDemo";
-import Skills from "./Skills";
-import SkillList from './SkillList';
-import TracingBeam from "./TracingBeam";
-import Projects from "./Projects/Projects";
+import { useEffect, useState } from "react";
+import { Container, Modal, Nav, Navbar } from "react-bootstrap";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Parallax from "../components/Parallax";
+import ParallaxScrollDemo from "./ParallaxScrollDemo";
+import ParticleEffect from "./Particles/ParticleEffect ";
+import SkillList from './SkillList';
+import Skills from "./Skills";
+import { TextGenerateEffect } from "./TextGenerateEffect"; // Ensure this path is correct
+import Timeline from "./Timeline";
 
 import { FaRegCopy } from "react-icons/fa";
 
@@ -231,7 +228,7 @@ const Portfolio = () => {
             className="hero-th-title uppercase"
           />
           <a
-            href="/resume.pdf"
+            href="/Kasinath_Resume.pdf"
             download="Kasinath_Resume.pdf"
             className="p-[3px] relative no-underline"
           >
